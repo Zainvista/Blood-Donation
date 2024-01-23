@@ -11,7 +11,7 @@ body {
 #banner img{
     width: 100px;
     height: auto;
-    padding-top: 50%;
+    padding-top: 28%;
    }
 #banner h3{
     font-size: 20PX;
@@ -42,16 +42,23 @@ tbody td a:hover{
 tbody .b-g{
     background-color: red;
 }
-footer{
-    background-color: black;
-    margin-top: 100px;
-}
-footer p{
+
+
+
+.footer p{
     text-align: center;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 12px;
     padding: 20px;
     margin-bottom: 0;
     
 
 }
+
+
+
+
+
+
+
+
