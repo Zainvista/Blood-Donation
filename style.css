@@ -6,13 +6,12 @@ body {
 }
 #banner{
     text-align: center;
-    padding-top: 20px;
 }
 
 #banner img{
     width: 100px;
     height: auto;
-    padding-top: 20%;
+    padding-top: 50%;
    }
 #banner h3{
     font-size: 20PX;
