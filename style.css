@@ -23,6 +23,7 @@ body {
 #banner p{
     font-size: 16px;
     margin-top: 60px;
+    margin: 30px 0 30px 0;
 }
 button a{
     color: white;
@@ -43,13 +44,16 @@ tbody td a:hover{
 tbody .b-g{
     background-color: red;
 }
+footer{
+    background-color: black;
+    margin: 0;
+}
+footer p{
+    text-align: center;
+    margin-bottom: 0;
+    color: white;
+    font-size: 12px;
+    padding: 20px;
+    
 
-
-
-
-
-
-
-
-
-
+}
