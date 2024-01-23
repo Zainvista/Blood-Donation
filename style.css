@@ -6,7 +6,7 @@ body {
 }
 #banner{
     text-align: center;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 #banner img{
@@ -52,6 +52,7 @@ footer p{
     color: white;
     font-size: 12px;
     padding: 20px;
+    margin-bottom: 0;
     
 
 }
