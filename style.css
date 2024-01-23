@@ -6,6 +6,7 @@ body {
 }
 #banner{
     text-align: center;
+    padding-top: 30px;
 }
 
 #banner img{
@@ -18,6 +19,10 @@ body {
 }
 #banner h6{
     margin-bottom: 20px;
+}
+#banner p{
+    font-size: 16px;
+    margin-top: 30px;
 }
 button a{
     color: white;
