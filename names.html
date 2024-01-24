@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Names</title>
+    <title>Data</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="js/bootstrap.js">
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -12,13 +12,14 @@
 
 </head>
 <body>
+  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search Blood Group.. "  title="Type in a name">
   <div class="container-fluid">
-        <table class="table caption-top">
+        <table class="table caption-top" id="myTable" >
             <thead>
               <tr>
                 <th scope="col-xs-12">No</th>
                 <th scope="col-xs-12">Blood Group</th>
-                <th scope="col-xs-12">Name</th>
+                <th scope="col-xs-12">Names</th>
                 <th scope="col-xs-12">Address</th>
                 <th scope="col-xs-12">Call</th>
               </tr>
@@ -129,5 +130,25 @@
             </tbody>
           </table>
   </div>
+  <script>
+    function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+  </script>
 </body>
 </html>
