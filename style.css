@@ -24,9 +24,32 @@ body {
     height: auto;
     padding-top: 45%;
 }
+#banner .animated {
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+  }
+  
+    
+  @-webkit-keyframes up-down {
+    0% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes up-down {
+    0% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
 
 #banner h3{
     font-size: 20PX;
+    margin-top: 10px;
 }
 
 #banner h6{
